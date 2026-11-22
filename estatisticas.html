@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   BitLab | Estatísticas
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="navbar">
+   <div class="navbar-conteudo">
+    <div class="marca">
+     <strong>
+      BitLab
+      <span>
+       .
+      </span>
+     </strong>
+     <small>
+      Arquitetura Computacional
+     </small>
+    </div>
+    <nav aria-label="Navegação principal">
+     <a href="index.html">
+      Jogo
+     </a>
+     <a class="ativo" href="estatisticas.html">
+      Estatísticas
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main>
+   <div class="introducao">
+    <h1>
+     Seu progresso
+    </h1>
+    <p>
+     Acompanhe seus resultados, ganhe XP e avance de nível jogando.
+    </p>
+   </div>
+   <section class="painel painel-nivel">
+    <div class="nivel-topo">
+     <div>
+      <p class="rotulo-nivel">
+       Seu nível
+      </p>
+      <h2 id="stat_nivel">
+       Nível 1 · Iniciante
+      </h2>
+     </div>
+     <div class="numero-xp">
+      <strong id="stat_xp">
+       0 XP
+      </strong>
+      <span id="stat_falta_xp">
+       Faltam 100 XP para subir de nível
+      </span>
+     </div>
+    </div>
+    <div class="barra-progresso">
+     <div id="barra_xp">
+     </div>
+    </div>
+    <p class="explicacao-xp">
+     +10 XP por palavra nova certa na rodada · +40 XP ao completar a cruzadinha · +50 XP ao ganhar no Termo · +10 XP ao terminar o Termo sem acertar.
+    </p>
+   </section>
+   <div class="resumo-stats">
+    <div class="dado-stat">
+     <span>
+      Palavras acertadas
+     </span>
+     <strong id="stat_palavras_certas">
+      0
+     </strong>
+     <small>
+      Total das rodadas
+     </small>
+    </div>
+    <div class="dado-stat">
+     <span>
+      Recorde na cruzadinha
+     </span>
+     <strong id="stat_melhor_cruzadinha">
+      0/16
+     </strong>
+     <small>
+      Mais acertos em uma rodada
+     </small>
+    </div>
+    <div class="dado-stat">
+     <span>
+      Vitórias no Termo
+     </span>
+     <strong id="stat_vitorias_termo">
+      0
+     </strong>
+     <small id="stat_partidas_termo">
+      0 partidas concluídas
+     </small>
+    </div>
+    <div class="dado-stat">
+     <span>
+      Taxa de vitória
+     </span>
+     <strong id="stat_taxa_termo">
+      0%
+     </strong>
+     <small>
+      Das partidas do Termo
+     </small>
+    </div>
+   </div>
+   <div class="stats-detalhes">
+    <section class="painel painel-grafico">
+     <h2>
+      Seus acertos na cruzadinha
+     </h2>
+     <p>
+      Veja a quantidade de palavras certas nas últimas 8 conferências.
+     </p>
+     <div class="area-grafico">
+      <canvas aria-label="Gráfico da evolução dos seus acertos na cruzadinha" id="grafico_progresso">
+      </canvas>
+     </div>
+     <p id="aviso_grafico">
+      Clique em Conferir respostas no jogo para registrar seu primeiro resultado.
+     </p>
+    </section>
+    <section class="painel painel-missao">
+     <h2>
+      Próxima meta
+     </h2>
+     <strong id="stat_meta">
+      Acerte 8 palavras em uma rodada
+     </strong>
+     <p id="stat_meta_contador">
+      0 de 8
+     </p>
+     <div class="barra-progresso barra-meta">
+      <div id="barra_meta">
+      </div>
+     </div>
+     <h3>
+      Seu desempenho
+     </h3>
+     <p id="stat_resumo">
+      Continue jogando para registrar seus resultados.
+     </p>
+     <p class="aviso-salvo">
+      Seu progresso é mantido apenas durante esta sessão.
+     </p>
+     <button class="botao-limpar" onclick="zerarEstatisticas()">
+      Zerar estatísticas
+     </button>
+    </section>
+   </div>
+   <footer>
+    BitLab · Atividade de Arquitetura Computacional
+   </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js">
+  </script>
+  <script src="javascript/script.js"></script>
+ </body>
+</html>
+

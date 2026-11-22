@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   BitLab | Arquitetura Computacional
+  </title>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+  <link href="css/style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="navbar">
+   <div class="navbar-conteudo">
+    <div class="marca">
+     <strong>
+      BitLab
+      <span>
+       .
+      </span>
+     </strong>
+     <small>
+      Arquitetura Computacional
+     </small>
+    </div>
+    <nav aria-label="Navegação principal">
+     <a class="ativo" href="index.html">
+      Jogo
+     </a>
+     <a href="estatisticas.html">
+      Estatísticas
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main>
+   <div class="introducao">
+    <h1>
+     Desafio do hardware
+    </h1>
+    <p>
+     Complete a cruzadinha usando as pistas e as palavras disponíveis. Depois experimente o Termo.
+    </p>
+   </div>
+   <div class="layout-jogo">
+    <aside class="painel lista-lateral">
+     <h2>
+      Palavras disponíveis
+     </h2>
+     <p>
+      Respostas que podem aparecer na cruzadinha.
+     </p>
+     <div id="div_palavras">
+     </div>
+     <h3>
+      Palavras do Termo
+     </h3>
+     <p>
+      Todas têm cinco letras.
+     </p>
+     <div id="div_palavras_termo">
+     </div>
+    </aside>
+    <div class="conteudo-principal">
+     <div class="jogo">
+      <section class="painel tabuleiro-painel">
+       <div class="titulo-tabuleiro">
+        <h2>
+         Cruzadinha
+        </h2>
+        <p id="div_contador">
+         Acertos: 0 de 16 palavras
+        </p>
+       </div>
+       <div class="area-tabuleiro">
+        <div id="div_tabuleiro">
+        </div>
+       </div>
+       <div class="botoes">
+        <button onclick="conferir()">
+         Conferir respostas
+        </button>
+        <button class="botao-secundario" onclick="iniciar()">
+         Reiniciar
+        </button>
+        <button class="botao-secundario" onclick="sortearCasa()">
+         Sortear uma casa
+        </button>
+       </div>
+       <p id="div_mensagem">
+        Preencha as casas para começar.
+       </p>
+      </section>
+      <section class="painel pistas">
+       <h2>
+        Pistas
+       </h2>
+       <h3>
+        Horizontais
+       </h3>
+       <div id="div_horizontais">
+       </div>
+       <h3>
+        Verticais
+       </h3>
+       <div id="div_verticais">
+       </div>
+      </section>
+     </div>
+     <section class="painel jogo-termo">
+      <div>
+       <h2>
+        Termo
+        <span>
+         · Desafio extra
+        </span>
+       </h2>
+       <p>
+        Adivinhe a palavra de 5 letras em até 6 tentativas.
+       </p>
+       <p class="legenda-termo">
+        <b>
+         Verde:
+        </b>
+        posição certa ·
+        <b>
+         Amarelo:
+        </b>
+        posição errada ·
+        <b>
+         Cinza:
+        </b>
+        não existe
+       </p>
+       <div class="entrada-termo">
+        <input aria-label="Digite uma palavra com cinco letras" autocomplete="off" id="ipt_termo" maxlength="5" onkeydown="if (event.key == 'Enter') tentarTermo()" placeholder="5 letras" type="text"/>
+        <button onclick="tentarTermo()">
+         Tentar
+        </button>
+        <button class="botao-secundario" onclick="iniciarTermo()">
+         Novo termo
+        </button>
+       </div>
+       <p id="div_aviso_termo">
+        Você tem 6 tentativas.
+       </p>
+      </div>
+      <div id="div_grade_termo">
+      </div>
+     </section>
+    </div>
+   </div>
+   <footer>
+    BitLab · Atividade de Arquitetura Computacional
+   </footer>
+  </main>
+  <script src="javascript/script.js"></script>
+ </body>
+</html>
+
