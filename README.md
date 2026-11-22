@@ -10,8 +10,6 @@ Jogo de Arquitetura Computacional com **cruzadinha**, **Termo** e **estatística
 
 Não é necessário instalar nada. Basta acessar o site e jogar. Na opção **Estatísticas**, você acompanha seus acertos, XP e nível.
 
-> O endereço funciona depois que a publicação no GitHub Pages for concluída.
-
 ## Organização dos arquivos
 
 ```text
