@@ -56,7 +56,7 @@ h3 { font-size: 14px; margin: 22px 0 10px; color: #285c45; }
     overflow-wrap: anywhere;
 }
 .titulo-tabuleiro { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
-#div_contador { color: #2e664b; font-size: 12px; font-weight: 700; margin: 0 0 10px; }
+#contador { color: #2e664b; font-size: 12px; font-weight: 700; margin: 0 0 10px; }
 .area-tabuleiro { overflow-x: auto; padding: 6px 0; }
 .tabuleiro { border-collapse: collapse; margin: auto; }
 .tabuleiro td { width: 30px; height: 30px; padding: 0; }
@@ -89,7 +89,7 @@ button:focus-visible, input:focus-visible { outline: 2px solid #438b66; outline-
 .botoes button:hover, .entrada-termo button:hover { background: #1d4633; }
 .botoes .botao-secundario, .entrada-termo .botao-secundario { color: #285c45; background: white; border-color: #b7cfc0; }
 .botoes .botao-secundario:hover, .entrada-termo .botao-secundario:hover { background: #edf4ef; }
-#div_mensagem { margin: 14px 0 0; color: #68786d; font-size: 13px; }
+#aviso { margin: 14px 0 0; color: #68786d; font-size: 13px; }
 .pistas { max-height: 735px; overflow-y: auto; }
 .pistas h3 { margin-top: 17px; }
 .pista {
@@ -120,7 +120,7 @@ button:focus-visible, input:focus-visible { outline: 2px solid #438b66; outline-
     border-radius: 6px;
     font: inherit;
 }
-#div_aviso_termo { font-size: 13px; margin: 10px 0 0; }
+#aviso_termo { font-size: 13px; margin: 10px 0 0; }
 .grade-termo { margin: auto; border-spacing: 5px; }
 .quadrado-termo { width: 40px; height: 40px; text-align: center; border: 2px solid #d3dfd6; border-radius: 4px; font-size: 21px; font-weight: bold; }
 .resumo-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 20px; }
