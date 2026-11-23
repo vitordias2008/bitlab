@@ -2,7 +2,13 @@
 
 Jogo de Arquitetura Computacional com **cruzadinha**, **Termo** e **estatísticas do jogador**.
 
-![Imagem ilustrativa de um processador](imagens/processador.jpg)
+![Processador](imagens/processador.jpg)
+
+## Acessar o jogo
+
+**[Abrir BitLab no navegador](https://vitordias2008.github.io/bitlab/)**
+
+Não é necessário instalar nada. Basta acessar o site e jogar. Na opção **Estatísticas**, você acompanha seus acertos, XP e nível.
 
 ## Organização dos arquivos
 
@@ -20,18 +26,10 @@ BitLab/
 └── README.md
 ```
 
-- **index.html:** página do jogo.
-- **estatisticas.html:** resultados, XP e níveis.
-- **style.css:** aparência das páginas.
-- **script.js:** funcionamento dos jogos e das estatísticas.
+- `index.html`: cruzadinha e Termo.
+- `estatisticas.html`: estatísticas, XP e níveis.
+- `css/style.css`: visual do site.
+- `javascript/script.js`: funcionamento do jogo.
+- `imagens/`: imagens decorativas.
 
-## Como executar
-
-1. Baixe o projeto e extraia o arquivo ZIP.
-2. Abra a pasta **BitLab**.
-3. Clique duas vezes em **index.html** para abrir no navegador.
-4. Use o menu **Estatísticas** para acompanhar os resultados.
-
-Não é necessário instalar nada. Para carregar o gráfico Chart.js, é preciso ter internet.
-
-![Imagem ilustrativa de memórias RAM](imagens/memoria.jpg)
+![Memória RAM](imagens/memoria.jpg)
